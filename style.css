@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#intro {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  overflow: hidden;
+}
+
+.curtain {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+
+.curtain div {
+  position: absolute;
+  height: 100vmax;
+}
+
+.curtain div .curtain-right {
+  position: absolute;
+}
+
+.curtain div:nth-child(1) {
+  background-color: #0a9b94;
+  animation: opening-left 1.0s ease 0.5s forwards;
+}
+
+.curtain div:nth-child(2) {
+  background-color: #0a9b94;
+  animation: opening-right 1.0s ease 0.5s forwards;
+}
+
+.footer-icon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 0px;
+  bottom: -120px;
+  animation: footer-in 2.0s ease 1.5s forwards;
+}
+
+.footer-icon .inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-icon .inner span {
+  position: absolute;
+  top: -20px;
+  left: 15px;
+}
+
+.footer-icon .inner div.img {
+  position: absolute;
+}
+
+.footer-icon .inner div.img:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-image: url(./images/footer_go.png);
+}
+
+.links {
+  position: absolute;
+  top: 4rem;
+  width: 100%;
+}
+
+.links .inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.links .inner div {
+  position: absolute;
+  color: #FFFFFF;
+  font-size: 2rem;
+  width: 100%;
+  left: -120px;
+}
+
+.links .inner div:nth-child(1) { top: 0rem; }
+.links .inner div:nth-child(2) { top: 2.5rem; }
+.links .inner div:nth-child(3) { top: 5.0rem; }
+.links .inner div:nth-child(4) { top: 7.5rem; }
+
+.links .inner div:nth-child(1) { animation: slide-in 1.0s ease 3.5s forwards; }
+.links .inner div:nth-child(2) { animation: slide-in 1.0s ease 3.7s forwards; }
+.links .inner div:nth-child(3) { animation: slide-in 1.0s ease 3.9s forwards; }
+.links .inner div:nth-child(4) { animation: slide-in 1.3s ease 4.2s forwards; }
+
+
+@keyframes opening-left {
+  from { width: 0%; }
+  to   { width: 50%; }
+}
+
+@keyframes opening-right {
+  from { width: 0%; right: 0; }
+  to   { width: 50%; right: 0; }
+}
+
+@keyframes footer-in {
+  from { bottom: -120px; }
+  to { bottom: 0px; }
+}
+
+@keyframes slide-in {
+  from { left: -200px; }
+  to { left: 10px; }
+}
