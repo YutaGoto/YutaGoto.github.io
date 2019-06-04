@@ -5,6 +5,25 @@
 
 body {
   font-family: 'Noto Sans JP', sans-serif;
+  color: #FFFFFF;
+}
+
+/* Colors */
+
+.github-color {
+  color: #f5f5f5;
+}
+
+.twitter-color {
+  color: #f5f8fa;
+}
+
+.facebook-color {
+  color: #3b5998;
+}
+
+.medium-color {
+  color: #1f1f1f;
 }
 
 #intro {
@@ -89,23 +108,31 @@ body {
   height: 100%;
 }
 
-.links .inner div {
+.links .inner span {
   position: absolute;
-  color: #FFFFFF;
   font-size: 2rem;
-  width: 100%;
-  left: -120px;
+  left: -300px;
 }
 
-.links .inner div:nth-child(1) { top: 0rem; }
-.links .inner div:nth-child(2) { top: 2.5rem; }
-.links .inner div:nth-child(3) { top: 5.0rem; }
-.links .inner div:nth-child(4) { top: 7.5rem; }
+.links .inner span:nth-child(1) { transition: all .5s cubic-bezier(.85,.14,.28,.98); }
+.links .inner span:nth-child(2) { transition: all .5s cubic-bezier(.85,.14,.28,.98); }
+.links .inner span:nth-child(3) { transition: all .5s cubic-bezier(.85,.14,.28,.98); }
+.links .inner span:nth-child(4) { transition: all .5s cubic-bezier(.85,.14,.28,.98); }
 
-.links .inner div:nth-child(1) { animation: slide-in 1.0s ease 3.5s forwards; }
-.links .inner div:nth-child(2) { animation: slide-in 1.0s ease 3.7s forwards; }
-.links .inner div:nth-child(3) { animation: slide-in 1.0s ease 3.9s forwards; }
-.links .inner div:nth-child(4) { animation: slide-in 1.3s ease 4.2s forwards; }
+.links .inner span:nth-child(1):hover { transform: scale(2); }
+.links .inner span:nth-child(2):hover { transform: scale(2); }
+.links .inner span:nth-child(3):hover { transform: scale(2); }
+.links .inner span:nth-child(4):hover { transform: scale(2); }
+
+.links .inner span:nth-child(1) { top: 0rem; }
+.links .inner span:nth-child(2) { top: 3rem; }
+.links .inner span:nth-child(3) { top: 6rem; }
+.links .inner span:nth-child(4) { top: 9rem; }
+
+.links .inner span:nth-child(1) { animation: slide-in 1.0s ease 3.5s forwards; }
+.links .inner span:nth-child(2) { animation: slide-in 1.0s ease 3.7s forwards; }
+.links .inner span:nth-child(3) { animation: slide-in 1.0s ease 3.9s forwards; }
+.links .inner span:nth-child(4) { animation: slide-in 1.3s ease 4.2s forwards; }
 
 
 @keyframes opening-left {
@@ -119,11 +146,11 @@ body {
 }
 
 @keyframes footer-in {
-  from { bottom: -120px; }
-  to { bottom: 0px; }
+  from { bottom: -180px; opacity: 0; }
+  to { bottom: 0px; opacity: 1; }
 }
 
 @keyframes slide-in {
   from { left: -200px; }
-  to { left: 10px; }
+  to { left: 100px; }
 }
