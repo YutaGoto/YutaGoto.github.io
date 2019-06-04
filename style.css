@@ -119,10 +119,10 @@ body {
 .links .inner span:nth-child(3) { transition: all .5s cubic-bezier(.85,.14,.28,.98); }
 .links .inner span:nth-child(4) { transition: all .5s cubic-bezier(.85,.14,.28,.98); }
 
-.links .inner span:nth-child(1):hover { transform: scale(2); }
-.links .inner span:nth-child(2):hover { transform: scale(2); }
-.links .inner span:nth-child(3):hover { transform: scale(2); }
-.links .inner span:nth-child(4):hover { transform: scale(2); }
+.links .inner span:nth-child(1):hover, .links .inner span:nth-child(1):active { transform: scale(2); }
+.links .inner span:nth-child(2):hover, .links .inner span:nth-child(2):active { transform: scale(2); }
+.links .inner span:nth-child(3):hover, .links .inner span:nth-child(3):active { transform: scale(2); }
+.links .inner span:nth-child(4):hover, .links .inner span:nth-child(4):active { transform: scale(2); }
 
 .links .inner span:nth-child(1) { top: 0rem; }
 .links .inner span:nth-child(2) { top: 3rem; }
