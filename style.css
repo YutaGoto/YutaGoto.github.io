@@ -8,6 +8,10 @@ body {
   color: #FFFFFF;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Colors */
 
 .github-color {
