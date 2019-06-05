@@ -1,3 +1,5 @@
+@import url("./colors.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -10,24 +12,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-/* Colors */
-
-.github-color {
-  color: #f5f5f5;
-}
-
-.twitter-color {
-  color: #f5f8fa;
-}
-
-.facebook-color {
-  color: #3b5998;
-}
-
-.medium-color {
-  color: #1f1f1f;
 }
 
 #intro {
@@ -95,7 +79,7 @@ a {
   width: 100px;
   height: 100px;
   background-size: cover;
-  background-image: url(./images/footer_go.png);
+  background-image: url(../images/footer_go.png);
 }
 
 .links {
@@ -122,21 +106,25 @@ a {
 .links .inner span:nth-child(2) { transition: all .5s cubic-bezier(.85,.14,.28,.98); }
 .links .inner span:nth-child(3) { transition: all .5s cubic-bezier(.85,.14,.28,.98); }
 .links .inner span:nth-child(4) { transition: all .5s cubic-bezier(.85,.14,.28,.98); }
+.links .inner span:nth-child(5) { transition: all .5s cubic-bezier(.85,.14,.28,.98); }
 
 .links .inner span:nth-child(1):hover, .links .inner span:nth-child(1):active { transform: scale(2); }
 .links .inner span:nth-child(2):hover, .links .inner span:nth-child(2):active { transform: scale(2); }
 .links .inner span:nth-child(3):hover, .links .inner span:nth-child(3):active { transform: scale(2); }
 .links .inner span:nth-child(4):hover, .links .inner span:nth-child(4):active { transform: scale(2); }
+.links .inner span:nth-child(5):hover, .links .inner span:nth-child(5):active { transform: scale(2); }
 
 .links .inner span:nth-child(1) { top: 0rem; }
 .links .inner span:nth-child(2) { top: 3rem; }
 .links .inner span:nth-child(3) { top: 6rem; }
 .links .inner span:nth-child(4) { top: 9rem; }
+.links .inner span:nth-child(5) { top: 12rem; }
 
 .links .inner span:nth-child(1) { animation: slide-in 1.0s ease 3.5s forwards; }
 .links .inner span:nth-child(2) { animation: slide-in 1.0s ease 3.7s forwards; }
 .links .inner span:nth-child(3) { animation: slide-in 1.0s ease 3.9s forwards; }
-.links .inner span:nth-child(4) { animation: slide-in 1.3s ease 4.2s forwards; }
+.links .inner span:nth-child(4) { animation: slide-in 1.0s ease 4.2s forwards; }
+.links .inner span:nth-child(5) { animation: slide-in 1.3s ease 4.6s forwards; }
 
 
 @keyframes opening-left {
